@@ -6,14 +6,17 @@
     <title>Sidebar Dashboard Template With Submenu</title>
     <link href="css/estilo.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
+    <!--wrapper start-->
     <div class="wrapper">
+        <!--header start-->
         <div class="header">
             <div class="header-menu">
                 <div class="title">Coding <span>Snow</span></div>
-                <div class="sidebar_btn">
+                <div class="sidebar-btn">
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul>
@@ -23,54 +26,83 @@
                 </ul>
             </div>
         </div>
-    </div>
-
-    <div class="sidebar">
-        <div class="sidebar-menu">
-            <center>
-                <img src="Zoro-Final-1.jpg" alt="">
-                <p>Zoro Sola</p>
-            </center>
-            <li class="item">
-                <a href="#" class="menu-btn">
-                    <i class="fas fa-desktop">Dashboard</i>
-                </a>
-            </li>
-            <li class="item" id="profile">
-                <a href="#profile" class="menu-btn">
-                    <i class="fas fa-user-circle">Profile <i class="fas fa-chevron-down drop-down"></i></i>
-                </a>
-                <div class="sub-menu">
-                <a href="#"><i class="fas fa-image"></i><span>Picture</span></a>
-                <a href="#"><i class="fas fa-address-card"></i><span>Info</span></a>
-                </div>
-            </li>
-            <li class="item" id="messages">
-                <a href="#profile" class="menu-btn">
-                    <i class="fas fa-user-circle">Messages <i class="fas fa-chevron-down drop-down"></i></i>
-                </a>
-                <div class="sub-menu">
-                    <a href="#"><i class="fas fa-envelope"></i><span>New</span></a>
-                    <a href="#"><i class="fas fa-envelope-square"></i><span>Sent</span></a>
-                    <a href="#"><i class="fas fa-exclamation-circle"></i><span>Spam</span></a>
-                </div>
-            </li>
-            <li class="item" id="settings">
-                <a href="#profile" class="menu-btn">
-                    <i class="fas fa-user-circle">Settings <i class="fas fa-chevron-down drop-down"></i></i>
-                </a>
-                <div class="sub-menu">
-                    <a href="#"><i class="fas fa-lock"></i><span>Password</span></a>
-                    <a href="#"><i class="fas fa-lock"></i><span>Language</span></a>
-                </div>
-            </li>
-            <li class="item">
-                <a href="#" class="menu-btn">
-                    <i class="fas fa-info-circle"></i><span>About</span>
-                </a>
-            </li>
+        <!--header menu end-->
+        <!--sidebar start-->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <center class="profile">
+                    <img src="Zoro-Final-1.jpg" alt="">
+                    <p>Zoro Sola</p>
+                </center>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-desktop"></i><span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="item" id="profile">
+                    <a href="#profile" class="menu-btn">
+                        <i class="fas fa-user-circle"></i><span>Profile <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><i class="fas fa-image"></i><span>Picture</span></a>
+                        <a href="#"><i class="fas fa-address-card"></i><span>Info</span></a>
+                    </div>
+                </li>
+                <li class="item" id="messages">
+                    <a href="#profile" class="menu-btn">
+                        <i class="fas fa-envelope"></i><span>Messages<i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><i class="fas fa-envelope"></i><span>New</span></a>
+                        <a href="#"><i class="fas fa-envelope-square"></i><span>Sent</span></a>
+                        <a href="#"><i class="fas fa-exclamation-circle"></i><span>Spam</span></a>
+                    </div>
+                </li>
+                <li class="item" id="settings">
+                    <a href="#profile" class="menu-btn">
+                        <i class="fas fa-cog"></i><span>Settings<i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><i class="fas fa-lock"></i><span>Password</span></a>
+                        <a href="#"><i class="fas fa-lock"></i><span>Language</span></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-info-circle"></i><span>About</span>
+                    </a>
+                </li>
+            </div>
         </div>
+        <!--sidebar end-->
+        <!--main container start-->
+        <div class="main-container">
+            <div class="card">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+            <div class="card">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+            <div class="card">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+        </div>
+        <!--main container end-->
     </div>
+    <!--wrapper end-->
+
+
+
+        
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".sidebar-btn").click(function(){
+            $(".wrapper").toggleClass("collapse");
+        });
+    });
+    
+    </script>
+
     
 </body>
 </html>
